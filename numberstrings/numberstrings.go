@@ -16,10 +16,7 @@ func DigitString1(digit int) string {
 	Sie können eine Reihe von If-Anweisungen, eine Switch-Anweisung oder
 	auch eine Liste mit den Strings für die Ziffern verwenden.
 	*/
-	// begin-solution
 	return []string{"", "einund", "zweiund", "dreiund", "vierund", "fünfund", "sechsund", "siebenund", "achtund", "neunund"}[digit]
-	// end-solution
-	// iftask: return ""
 }
 
 // DigitString10 erwartet eine Ziffer als int.
@@ -36,10 +33,7 @@ func DigitString10(digit int) string {
 	Sie können eine Reihe von If-Anweisungen, eine Switch-Anweisung oder
 	auch eine Liste mit den Strings für die Ziffern verwenden.
 	*/
-	// begin-solution
 	return []string{"", "", "zwanzig", "dreißig", "vierzig", "fünfzig", "sechzig", "siebzig", "achtzig", "neunzig"}[digit]
-	// end-solution
-	// iftask: return ""
 }
 
 // DigitString100 erwartet eine Ziffer als int.
@@ -56,10 +50,7 @@ func DigitString100(digit int) string {
 	Sie können eine Reihe von If-Anweisungen, eine Switch-Anweisung oder
 	auch eine Liste mit den Strings für die Ziffern verwenden.
 	*/
-	// begin-solution
 	return []string{"", "einhundert", "zweihundert", "dreihundert", "vierhundert", "fünfhundert", "sechshundert", "siebenhundert", "achthundert", "neunhundert"}[digit]
-	// end-solution
-	// iftask: return ""
 }
 
 // NumberStringGreater20 erwartet eine Zahl >= 20 und liefert den zugehörigen String.
@@ -69,19 +60,15 @@ func NumberStringGreater20(n int) string {
 	Verwenden Sie die Funktionen DigitString1, DigitString10 und DigitString100,
 	um die Ziffern in Strings umzuwandeln.
 	*/
-	// begin-solution
 	if n%100 < 20 && n%100 > 0 {
 		return DigitString100(n/100) + NumberStringBelow20(n%100)
 	}
 	return DigitString100(n/100) + DigitString1(n%10) + DigitString10((n%100)/10)
-	// end-solution
-	// iftask: return ""
 }
 
 // NumberStringBelow20 erwartet eine Zahl >= 20 und liefert den zugehörigen String.
 func NumberStringBelow20(n int) string {
 	/* Hinweis: Verwenden Sie eine Switch-Anweisung oder eine Liste. */
-	// begin-solution
 	switch n {
 	case 0:
 		return "null"
@@ -124,7 +111,6 @@ func NumberStringBelow20(n int) string {
 	case 19:
 		return "neunzehn"
 	}
-	// end-solution
 	return ""
 }
 
@@ -149,7 +135,6 @@ func NumberString6Digits(n int) string {
 	Verwenden Sie die Funktion NumberString3Digits, um die Ziffern in Strings umzuwandeln.
 	*/
 	result := ""
-	// begin-solution
 	if n == 0 {
 		return "null"
 	}
@@ -161,6 +146,5 @@ func NumberString6Digits(n int) string {
 	if low != 0 {
 		result += NumberString3Digits(low)
 	}
-	// end-solution
 	return result
 }
