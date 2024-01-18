@@ -1,54 +1,9 @@
 = Umwandlung von Zahlen in Strings
 
-== Zahl in gesprochene Sprache umwandeln
+Dieses Repo enthält zwei Aufgaben, bei denen es darum geht,
+Zahlen in Strings umzuwandeln.
 
-Die Aufgabe hier ist, eine Funktion zu schreiben,
-die eine Zahl als `int` erwartet und die einen String
-zurückgibt, der die Zahl ausschreibt.
-
-== Beispiele
-
-*Beispiele (Normalfall):*
-
-* 143 -> "einhundertdreiundvierzig"
-* 53 -> "dreiundfünfzig"
-* 7 -> "sieben"
-* 258 -> "zweihundertachtundfünfzig"
-
-*Beispiele (Sonderfälle):*
-
-* 12 -> "zwölf"
-* 20 -> "zwanzig"
-* 131 -> "einhunderteinunddreißig"
-* 1 -> "eins"
-* 0 -> "null"
-* 258756 -> "zweihundertachtundfünfzigtausendsiebenhundertsechsundfünfzig"
-
-== Arabische in römische Zahlen umwandeln
-
-Bei dieser Aufgabe geht es darum, eine Funktion zu schreiben,
-die eine Zahl als `int` erwartet und die einen String
-zurückgibt, der die Zahl in römischen Ziffern ausschreibt.
-
-== Beispiele
-
-* 1 -> "I"
-* 2 -> "II"
-* 4 -> "IV"
-* 9 -> "IX"
-* 38 -> "XXXVIII"
-* 42 -> "XLII"
-* 99 -> "XCIX"
-
-== Hinweise
-
-Die vorgebenen Tests prüfen alle Zahlen von 0 bis 100.
-Für größere Zahlen gibt es keine Tests, aber die Funktion
-könnte nach dem gleichen Schema wie in den hier erarbeiteten
-Lösungen erweitert werden.
-
-Die Tests sind in 10er-Blöcke unterteilt.
-Beginnen Sie mit der Funktion `RomanBelow10` und erfüllen Sie die entsprechenden Tests.
-Sobald `RomanBelow10` funktioniert, können Sie sich an `RomanBelow100` wagen.
-Dabei sollten Sie die Tests für die Zahlenblöcke 11-20, 21-31, ...
-nacheinander zum Laufen bringen und Ihre Funktion entsprechend erweitern.
+* Im Package link:numberstrings/README.adoc[numberstrings] geht es darum,
+  zu Zahlen deren Zahlwörter in der deutschen Sprache zu bestimmen.
+* im Package link:roman/README.adoc[roman] geht es darum,
+  arabische in römische Zahlen umzuwandeln.
