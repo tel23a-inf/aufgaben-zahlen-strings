@@ -60,9 +60,6 @@ func NumberStringGreater20(n int) string {
 	Verwenden Sie die Funktionen DigitString1, DigitString10 und DigitString100,
 	um die Ziffern in Strings umzuwandeln.
 	*/
-	if n%100 < 20 && n%100 > 0 {
-		return DigitString100(n/100) + NumberStringBelow20(n%100)
-	}
 	return ""
 }
 
