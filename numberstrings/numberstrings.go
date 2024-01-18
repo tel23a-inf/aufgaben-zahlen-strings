@@ -119,13 +119,10 @@ func NumberString3Digits(n int) string {
 	/* Hinweis:
 	Verwenden Sie die Funktionen NumberStringBelow20 und NumberStringGreater20.
 	*/
-	// begin-solution
 	if n <= 19 {
 		return NumberStringBelow20(n)
 	}
 	return NumberStringGreater20(n)
-	// end-solution
-	// iftask: return ""
 }
 
 // NumberString6Digits erwartet eine Zahl 0 <= n <= 999999 und liefert den zugehörigen String.
